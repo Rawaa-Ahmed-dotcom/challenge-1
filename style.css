@@ -1,0 +1,267 @@
+
+*{
+   
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+   
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    max-width: 50vw;
+    margin: 80px auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.container .intro h1 {
+ font-family: "Young Serif";
+ color: hsl(24, 5%, 18%);
+ letter-spacing: 1px;
+ font-weight: 400;
+ font-size: 45px;
+ 
+}
+.container .intro p {
+ font-family: "Outfit";
+ line-height: 1.7;
+ color: hsl(30, 10%, 34%);
+
+}
+.container .prep {
+    background-color: hsl(332deg 100% 81.51% / 7%);
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-top: 20px;
+}
+.container .prep h2 {
+font-family : "Outfit";
+font-weight: 600;
+font-size: 22px;
+padding-left: 15px;
+color: hsl(332, 51%, 32%);
+margin-bottom: 20px;
+}
+.container .prep ul {
+    
+}
+.container .prep ul li {
+padding-left: 20px;
+margin-bottom: 20px;
+font-family: "Outfit";
+color: hsl(30, 10%, 34%);
+list-style: none;
+position: relative;
+
+}
+.container .prep ul li::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color:hsl(332, 51%, 32%);
+    left: -18px;
+    top: 50%;
+    transform: translatey(-50%);
+    -webkit-transform: translatey(-50%);
+    -moz-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    -o-transform: translatey(-50%);
+}
+
+.container .prep ul li span {
+color: hsl(30, 10%, 34%);
+display: inline-block;
+margin-right: 4px;
+font-weight: bold;
+
+}
+.container .ingred {
+    border-bottom: 1px solid hsla(33, 10%, 38%, 0.376);
+    padding-bottom: 40px;
+}
+.container .ingred h2 {
+color: hsl(14, 45%, 36%);
+font-family: "Outfit" serif;
+font-weight: 600;
+font-size: 35px;
+padding-left: 10px;
+}
+.container .ingred ul {
+    list-style: none;
+}
+.container ul li{
+margin-bottom: 15px;
+padding-left: 20px;
+position: relative;
+font-family: "Outfit";
+color: hsl(30, 10%, 34%);
+}
+.container .ingred ul li::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: hsl(14, 45%, 36%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: -15px;
+    top: 50%;
+    transform:translatey(-50%);
+    -webkit-transform:translatey(-50%);
+    -moz-transform:translatey(-50%);
+    -ms-transform:translatey(-50%);
+    -o-transform:translatey(-50%);
+}
+.container .instructions {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid hsla(33, 10%, 38%, 0.376);
+}
+.container .instructions h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: "Outfit" serif;
+    font-weight: 600;
+    font-size: 35px;
+    padding-left: 10px; 
+}
+.container .instructions ul {
+    list-style: none;
+
+}
+.container .instructions ul li {
+padding-left: 20px;
+margin-bottom: 20px;
+font-family: "Outfit";
+color: hsl(30, 10%, 34%);
+list-style: none;
+position: relative;
+counter-increment: counter;
+}
+.container .instructions ul li::before {
+    content: counter(counter) ".";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Outfit";
+    color: hsl(14, 45%, 36%);
+}
+
+
+.container .instructions ul li span {
+color: hsl(30, 10%, 34%);
+display: inline-block;
+margin-right: 4px;
+font-weight: bold;
+}
+.container .nutrition {
+    
+}
+.container .nutrition h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: "Outfit" serif;
+    font-weight: 600;
+    font-size: 35px;
+    padding-left: 10px; 
+}
+.container .nutrition p {
+    font-family: "Outfit";
+ line-height: 1.7;
+ color: hsl(30, 10%, 34%);
+ padding-left: 10px;
+}
+.container .nutrition .row:first-of-type {
+    margin-top: 30px;
+}
+.container .nutrition .row {
+    padding-left: 20px;
+   
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .nutrition .row:not(:last-child) {
+    border-bottom: 1px solid hsla(33, 10%, 38%, 0.376);
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+.container .nutrition .row span:first-child {
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit";
+    font-weight: 400;
+}
+.container .nutrition .row span:last-child {
+    color: hsl(14, 45%, 36%);
+    font-family: "Outfit";
+    font-weight: 600;
+}
+@media (max-width: 600px) {
+    .container {
+        min-width: 100vw;
+        padding: 0;
+        margin: 0 ;
+    }
+    .container .intro {
+        padding: 25px;
+        width: 100%;
+        
+    }
+    .container .intro h1 {
+        font-size: 30px;
+        
+
+    }
+    .container .prep,
+    .container .ingred,
+    .container .instructions,
+    .container .nutrition {
+        width: 85%;
+        margin: auto;
+    }
+    .container .nutrition {
+        margin-bottom: 50px;
+    }
+
+   
+}
