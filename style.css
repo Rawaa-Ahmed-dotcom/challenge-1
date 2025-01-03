@@ -236,7 +236,7 @@ font-weight: bold;
     font-family: "Outfit";
     font-weight: 600;
 }
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .container {
         min-width: 100vw;
         padding: 0;
